@@ -1,4 +1,4 @@
-.html
-.js
-.css
-.woff
+*.html
+*.js
+*.css
+*.woff
