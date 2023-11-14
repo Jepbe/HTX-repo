@@ -2,8 +2,9 @@
 #include <iostream>
 using namespace std;
 
-int pik() {
+int pik(void) {
     int test = 123;
+    return 0;
 };  
 
 
@@ -50,8 +51,15 @@ int main() {
     cout << user1.homeAdress;
     cout << "\n";
     cout << "\n";
-
     cout << user2.age;
+    cout << "\n";
+    cout << "\n";
+    cout << "\n";
+    
+    for (size_t i = 0; i < user1.firstName.length(); i++)
+    {
+        cout << "test";
+    }
     
     return 0; 
-}
+}   
