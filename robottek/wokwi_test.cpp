@@ -1,3 +1,5 @@
+#include <iostream>
+using namespace std;
 
 class lights {
   public:
@@ -17,8 +19,8 @@ void setup() {
   //pinMode(led_1.led, OUTPUT);  
   //pinMode(led_2.led, OUTPUT);
   //pinMode(led_3.led, OUTPUT);
-
 }
+
 
 void loop() {
   // put your main code here, to run repeatedly:
