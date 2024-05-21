@@ -30,14 +30,14 @@ maxInt = str(max(flat_list))
 minInt = str(min(flat_list))
 
 middel = round(middel, 2)
-middel = str(middel)
+
 
 varriation = max(flat_list) - min(flat_list)
 
 
 print("maksimumværdi: " + maxInt + "%")
 print("minimumværdi: " + minInt + "%")
-print("middelværdi: " + middel + "%")
+print("middelværdi: " + str(middel) + "%")
 print("variationsbredden: " + str(varriation) + "%-point")
 
 #print(len(flat_list)/2)
@@ -51,12 +51,12 @@ def checkDecimal(number):
 
 
 if checkDecimal(numbersHalf):
-    print("has decimal")
+    #print("has decimal")
     decimalListProcess = len(flat_list) / 2
     decimalListProcess = round(decimalListProcess) + 1
     print(decimalListProcess)
 else:
-    print("whole number")
+    #print("whole number")
     sortedList = sorted(flat_list)    
 
     #value = sortedList[((len(flat_list) / 2 - 1))] + sortedList[((len(flat_list) / 2))]
@@ -74,8 +74,16 @@ else:
     
     value = value1[value1Index] + value2[value2Index]
     value = value / 2
-    print(value)
+    print("median: " + str(value))
 
+    if middel > value:
+        print("skævhed: Højreskævt")
+    elif middel < value:
+        print("skævhed: Venstreskævt")
+
+kvartil = flat_list
+
+print(sorted(kvartil))
     
 
     

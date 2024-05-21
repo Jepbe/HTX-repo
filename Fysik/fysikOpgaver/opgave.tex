@@ -1,0 +1,54 @@
+\documentclass[11pt,a4paper]{article}
+
+% Layout
+\usepackage[margin=2.5cm]{geometry} % Justerer margnerne
+\usepackage{fancyhdr} % Fancy sidehoved
+\usepackage{parskip} % Afsnit skifter linje
+\usepackage{tabto} % Tillader tabulering
+\usepackage{pdflscape} % Tillader at rotere en side
+\usepackage{ragged2e} % Bruges til at justify dokument
+
+% Tekst
+\usepackage{lmodern} % latin modern skrifttype
+\usepackage[T1]{fontenc} % Enkoder skrifttypen
+\usepackage[utf8]{inputenc} % Enkoder automatisk inputet
+
+% Tabeller
+\usepackage[table, xcdraw]{xcolor} % Tilføjer tabelfunktionalitet
+\usepackage{multirow} % Tillader modifikation af tabelceller
+
+% Figurer
+\usepackage{chemfig} % Kemifigurer
+\usepackage{tikz} % Figurekstension
+\usepackage{pgfplots} % Matematikplots
+\pgfplotsset{compat=1.18}
+\usepackage{graphicx} % Grafikfunktionalitet
+\usepackage{float} % Grafikfunktionalitet
+\usepackage{wrapfig} % Wrapper figurer
+\usepackage{caption} % Tillader captions i figurer
+\usepackage{transparent}
+\usetikzlibrary{3d}
+
+% Tilgængelighed
+\usepackage[danish]{babel} % Sætter filens sprog til dansk
+\usepackage{hyperref} 
+\hypersetup{colorlinks, linkcolor=blue, urlcolor=blue} % Tillader hyperrefferencer samt indstiller disses farver
+\usepackage[shortlabels]{enumitem} % Tillader alternativ numereringer i item-miljøer
+\usepackage[none]{hyphenat} % Bindestregsfunktionalitet
+
+% Matematikfunktionalitet
+\usepackage{amssymb, amsmath, amsthm} % matematikfunktionalitet
+\usepackage{gensymb} % ekstra symboler
+\usepackage[version=4]{mhchem} % Kemiopgave funktionalitet
+\usepackage{accents} % Accenter i matematik
+\usepackage{textcomp} % Flere symboler
+\usepackage{cancel}
+
+\begin{document}
+I et køleskab er temperaturen ${\degree C}$. Når lågen åbnes, bliver luften i køleskabet erstattet med ${\degree C}$ varm køkkenluft ved 1 atm. Beregn trykket i køleskabet, når det har været lukket et stykke tid. Det antages, at køleskabet er lufttæt.
+    \begin{align*}
+        \mathrm{p_1 \cdot V = n\cdot R \cdot T_1} \\
+        \mathrm{p_2 \cdot V = n\cdot R \cdot T_2} \\ \\
+        \mathrm{\dfrac{p_1}{T_1} = \dfrac{p_2}{T_2}}
+    \end{align*}
+\end{document}
